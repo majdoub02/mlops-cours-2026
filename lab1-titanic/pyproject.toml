@@ -1,0 +1,31 @@
+[project]
+name = "m1-titanic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ihebmajdoub", email = "majdoubiheb63@gmail.com" }
+]
+requires-python = "==3.11.*"
+dependencies = [
+    "boto3>=1.43.106",
+    "dvc[s3]>=3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "mlflow>=3.17.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "pyarrow>=25.0.1",
+    "pytest>=9.1.1",
+    "pyyaml>=6.0.3",
+    "ruff>=0.17.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+m1-titanic = "m1_titanic:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
